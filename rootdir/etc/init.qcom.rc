@@ -151,11 +151,9 @@ on boot
     # Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
-    # Touchscreen
+    # touchpanel
     chown system system /proc/touchpanel/double_tap_enable
-    chown system system /proc/touchpanel/reversed_keys_enable
     chmod 0660 /proc/touchpanel/double_tap_enable
-    chmod 0660 /proc/touchpanel/reversed_keys_enable
 
     # Assign TCP buffer thresholds to be ceiling value of technology maximums
     # Increased technology maximums should be reflected here.
